@@ -1,42 +1,62 @@
+@font-face {
+  font-family: 'Jost';
+  src: url('./Jost-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
 body {
     text-align: center;
-}
-
-.tab {
-    display: inline-block;
-    padding: 8px 16px;
-    margin-right: 8px;
-    border: 1px solid black;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 30px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-input {
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
+    background: url('./cafeBackground.jpg');
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-color: #231812;
+    backdrop-filter: opacity(50%);
     color: white;
-    font-size: 16px;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+    height: 95vh;
+    width: 95%;
+    padding: 20px;
+    font-family: 'Jost';
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+button {
+    background-color: #392b21;
+    color: white;
+    width: 10%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+figcaption {
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.page-content {
+    width: 60%;
+    margin: auto;
 }
