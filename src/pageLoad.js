@@ -1,6 +1,8 @@
-import createRestaurantHomePage from './restaurant.js';
+import createRestaurantHomePage from './home.js';
+import manageTabs from './tabs.js';
 
 function initialLoad() {
+    manageTabs();
     createRestaurantHomePage();
 }
 
