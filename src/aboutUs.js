@@ -2,6 +2,7 @@ const createAboutUsPage = () => {
     const content = document.querySelector('#content');
     const pageContent = document.createElement('div');
     pageContent.classList.add('page-content');
+    pageContent.id = 'about-us';
 
     //Create and append heading
     const heading = document.createElement("h1");
@@ -34,6 +35,25 @@ const createAboutUsPage = () => {
 	saturday.textContent = 'Sat: 10am - 10pm';
 	hours.appendChild(saturday);
     pageContent.appendChild(hours);
+
+    //Create and append address
+    const addressDiv = document.createElement('div');
+    const addressHeader = document.createElement('h3');
+    addressHeader.textContent = "Address";
+    const address = document.createElement('p');
+    address.textContent = 'Located at: 123 Rainey St., Arlen, TX 73104';
+    addressDiv.append(addressHeader, address);
+    pageContent.appendChild(addressDiv);
+
+    //Create and append about us
+    const aboutUsDiv = document.createElement('div');
+    const aboutUsHeading = document.createElement('h3');
+    aboutUsHeading.textContent = "About Us";
+    const aboutUs = document.createElement('p');
+    aboutUs.textContent =
+		"Welcome to The Cat's Meow Cafe, where coffee meets cuddles! Nestled in the heart of the city, we offer a unique and cozy environment where cat lovers can enjoy a delicious cup of coffee and mouthwatering sandwiches while mingling with our resident feline friends. Our mission is to provide a purrfect sanctuary for both humans and cats alike, creating memorable moments and endless purrs. So, whether you're looking for a peaceful place to unwind or some playful paws to keep you company, The Cat's Meow Cafe is the ultimate destination for all your caffeinated and cat-loving needs. Come join the purrty!";
+    aboutUsDiv.append(aboutUsHeading, aboutUs);
+    pageContent.appendChild(aboutUsDiv);
 
     content.appendChild(pageContent);
 }

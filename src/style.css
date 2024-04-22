@@ -66,6 +66,10 @@ footer {
 }
 
 .page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 60%;
     margin: auto;
 }
@@ -76,5 +80,13 @@ li {
 }
 
 #hours-list {
+    margin-left: -40px;
     font-weight: bold
+}
+
+#about-us {
+    background-color: rgba(200, 178,165, 0.8);
+    box-shadow: 0 0 5px 10px rgba(200, 178,165, 0.8);
+    border-radius: 8px;
+    margin-top: 20px;
 }
