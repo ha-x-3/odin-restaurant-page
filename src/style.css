@@ -1,7 +1,16 @@
 @font-face {
   font-family: 'Jost';
+  font-style: normal;
   src: url('./Jost-Regular.woff') format('woff');
   font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  src: url('./Jost-Bold.woff') format('woff');
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -59,4 +68,13 @@ footer {
 .page-content {
     width: 60%;
     margin: auto;
+}
+
+li {
+    list-style: none;
+    font-weight: 600;
+}
+
+#hours-list {
+    font-weight: bold
 }
