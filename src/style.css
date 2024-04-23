@@ -19,7 +19,7 @@ body {
     background: url('./cafeBackground.jpg');
     background-position: center;
     background-size: 150%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-color: #231812;
     backdrop-filter: opacity(50%);
     color: white;
@@ -53,16 +53,9 @@ a {
     color: white;
 }
 
-p {
-    font-size: 20px;
-}
-
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    margin-bottom: 10px;
+    margin: 20px;
 }
 
 .page-content {
@@ -79,6 +72,10 @@ li {
     font-weight: 600;
 }
 
+#home-text {
+    font-size: 20px;
+}
+
 #hours-list {
     margin-left: -40px;
     font-weight: bold
@@ -89,4 +86,24 @@ li {
     box-shadow: 0 0 5px 10px rgba(200, 178,165, 0.8);
     border-radius: 8px;
     margin-top: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+}
+
+#menu {
+    background-color: rgba(200, 178,165, 0.8);
+    box-shadow: 0 0 5px 10px rgba(200, 178,165, 0.8);
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 70vw;
+    padding: 15px;
+}
+
+#top-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }

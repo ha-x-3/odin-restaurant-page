@@ -26,6 +26,8 @@ const createRestaurantHomePage = () => {
     const text = document.createElement('p');
     text.textContent =
 		"Indulge in the purrfect blend of coffee and comfort at The Cat's Meow Cafe! Enjoy delicious sandwiches while making feline friends. Where every sip and bite is the cat's whiskers!";
+    text.id = "home-text";
+
     pageContent.appendChild(text);
 
     content.appendChild(pageContent);
