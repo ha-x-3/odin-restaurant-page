@@ -95,7 +95,7 @@ const createMenuPage = () => {
 		sandwich1Desc,
 		sandwich1Price
 	);
-	//sandwich 2
+	//Sandwich 2
 	const sandwich2Div = document.createElement('div');
 	const sandwich2Name = document.createElement('h5');
 	sandwich2Name.textContent = 'Meatball Meow';
@@ -105,7 +105,7 @@ const createMenuPage = () => {
 	const sandwich2Price = document.createElement('p');
 	sandwich2Price.textContent = 'Price: $9.00';
 	sandwich2Div.append(sandwich2Name, sandwich2Desc, sandwich2Price);
-	//sandwich 3
+	//Sandwich 3
 	const sandwich3Div = document.createElement('div');
 	const sandwich3Name = document.createElement('h5');
 	sandwich3Name.textContent = 'Purrfect Veggie Wrap';
@@ -115,7 +115,7 @@ const createMenuPage = () => {
 	const sandwich3Price = document.createElement('p');
 	sandwich3Price.textContent = 'Price: $8.00';
 	sandwich3Div.append(sandwich3Name, sandwich3Desc, sandwich3Price);
-	//sandwich 4
+	//Sandwich 4
 	const sandwich4Div = document.createElement('div');
 	const sandwich4Name = document.createElement('h5');
 	sandwich4Name.textContent = 'Chicken & Cheddar Chirpwich';
@@ -125,7 +125,7 @@ const createMenuPage = () => {
 	const sandwich4Price = document.createElement('p');
 	sandwich4Price.textContent = 'Price: $9.50';
 	sandwich4Div.append(sandwich4Name, sandwich4Desc, sandwich4Price);
-	//sandwich 5
+	//Sandwich 5
 	const sandwich5Div = document.createElement('div');
 	const sandwich5Name = document.createElement('h5');
 	sandwich5Name.textContent = 'Smoked Salmon Siamese';
@@ -149,7 +149,7 @@ const createMenuPage = () => {
 	const dessertDiv = document.createElement('div');
 	const dessertHeadline = document.createElement('h3');
 	dessertHeadline.textContent = 'Desserts';
-	//dessert 1
+	//Dessert 1
 	const dessert1Div = document.createElement('div');
 	const dessert1Name = document.createElement('h5');
 	dessert1Name.textContent = 'Mew-sical Cheesecake';
@@ -164,7 +164,7 @@ const createMenuPage = () => {
 		dessert1Desc,
 		dessert1Price
 	);
-	//dessert 2
+	//Dessert 2
 	const dessert2Div = document.createElement('div');
 	const dessert2Name = document.createElement('h5');
 	dessert2Name.textContent = 'Chocolate Chip Cookie Cat';
@@ -183,6 +183,7 @@ const createMenuPage = () => {
 	const bottomDiv = document.createElement('div');
 	bottomDiv.append(dessertDiv);
 
+    //Append divs
 	menuDiv.append(topDiv, bottomDiv);
 	pageContent.appendChild(menuDiv);
 	content.appendChild(pageContent);
