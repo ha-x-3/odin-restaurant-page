@@ -18,21 +18,29 @@ body {
     text-align: center;
     background: url('./cafeBackground.jpg');
     background-position: center;
-    background-size: 150%;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #231812;
     backdrop-filter: opacity(50%);
     color: white;
-    height: 95vh;
-    width: 95%;
+    height: 100vh;
+    width: 100%;
     padding: 20px;
     font-family: 'Jost';
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 button {
     background-color: #392b21;
     color: white;
-    width: 10%;
+    width: 80%;
+    max-width: 200px;
     padding: 10px;
     margin: 5px;
     border-radius: 6px;
@@ -42,6 +50,8 @@ button {
 img {
     border-radius: 50%;
     box-shadow: 1px 1px 1px 1px black;
+    width: 100%;
+    max-width: 300px;
 }
 
 figcaption {
@@ -63,7 +73,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 90vw;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -74,10 +85,11 @@ li {
 
 #home-text {
     font-size: 20px;
+    margin: 10px;
 }
 
 #hours-list {
-    margin-left: -40px;
+    margin-left: 0;
     font-weight: bold
 }
 
@@ -86,6 +98,7 @@ li {
     box-shadow: 0 0 5px 10px rgba(200, 178,165, 0.8);
     border-radius: 8px;
     margin-top: 20px;
+    padding: 20px;
 }
 
 #about-us p {
@@ -97,13 +110,46 @@ li {
     box-shadow: 0 0 5px 10px rgba(200, 178,165, 0.8);
     border-radius: 8px;
     margin-top: 20px;
-    width: 70vw;
+    width: 90%;
+    max-width: 800px;
     padding: 15px;
 }
 
 #top-div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
+}
+
+@media (min-width: 896px) {
+    body {
+        height: 100%;
+        width: 90vw;
+        padding: 20px;
+    }
+
+    header nav {
+        justify-content: space-around;
+    }
+
+    button {
+        width: auto;
+        max-width: none;
+    }
+
+    .page-content {
+        width: 60%;
+    }
+
+    #top-div {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    #top-div {
+        justify-content: space-between;
+    }
 }
